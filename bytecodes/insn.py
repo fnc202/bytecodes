@@ -10,10 +10,11 @@ class Instr:
     Other opcodes."""
     def __init__(self, opc: typing.Union[int, str], arg, func):
         """初始化指令
-        参数：
-            int opc：操作码
-            int arg：操作参数
-            Func func：Func对象
+
+        Args:
+            opc(int): 操作码
+            arg(int): 操作参数
+            func(Func): Func对象
         """
         if type(opc) == str:
             opc = self._opc = opcode.opmap[opc]
@@ -29,7 +30,9 @@ class Instr:
     def check(self):
         """检查操作码和其他东西
         Checking Opcode and others
-        bool 返回值：检查结果
+
+        Returns:
+            bool: 检查结果
         """
         opc = self.opc
         return not(opc in opcode.hasconst or
@@ -51,9 +54,9 @@ class Instr:
     def opc(self, val):
         """设置操作码
         Sets opcode
-        参数：
-            int val：操作码
-            str val：操作指令（如LOAD_FAST）
+        Args:
+            val(int): 操作码
+            val(str): 操作指令（如LOAD_FAST）
         """
         if isinstance(val, int):
             self.nopc = opcode.opname[val]
@@ -65,14 +68,18 @@ class Instr:
     def tobytes(self):
         """转为字节码
         To bytecode.
-        bytes 返回值：字节码
+
+        Returns:
+            bytes: 字节码
         """
         return bytes((self._opc, self.arg))
 
     def disasm(self):
         """返回反编译结果
         Returns disassembly result.
-        str 返回值：反汇编结果
+
+        Returns:
+            str: 反汇编结果
         """
         return "%s" % self.nopc
 
@@ -84,11 +91,11 @@ class VarInstr(Instr):
 
     def __init__(self, opc, arg, func, val: bool = False):
         """初始化指令
-        参数：
-            int opc：操作码
-            int arg：操作参数
-            Func func：Func对象
-            bool val：arg是值（True）还是co_xxx的索引（False）
+        Args:
+            opc(int): 操作码
+            arg(int): 操作参数
+            func(Func): Func对象
+            val(bool): arg是值（True）还是co_xxx的索引（False）
         """
         if val:
             arg = self.table.index(arg)
