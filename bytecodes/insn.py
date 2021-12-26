@@ -1,13 +1,11 @@
-"""指令
-Instructions"""
+"""指令"""
 
 import typing
 import opcode
 
 
 class Instr:
-    """其他指令
-    Other opcodes."""
+    """其他指令"""
     def __init__(self, opc: typing.Union[int, str], arg, func):
         """初始化指令
 
@@ -29,7 +27,6 @@ class Instr:
 
     def check(self):
         """检查操作码和其他东西
-        Checking Opcode and others
 
         Returns:
             bool: 检查结果
@@ -45,15 +42,13 @@ class Instr:
 
     @property
     def opc(self):
-        """操作码
-        opcode
-        """
+        """操作码"""
         return self._opc
 
     @opc.setter
     def opc(self, val):
         """设置操作码
-        Sets opcode
+
         Args:
             val(int): 操作码
             val(str): 操作指令（如LOAD_FAST）
@@ -67,7 +62,6 @@ class Instr:
 
     def tobytes(self):
         """转为字节码
-        To bytecode.
 
         Returns:
             bytes: 字节码
@@ -76,7 +70,6 @@ class Instr:
 
     def disasm(self):
         """返回反编译结果
-        Returns disassembly result.
 
         Returns:
             str: 反汇编结果
@@ -85,8 +78,7 @@ class Instr:
 
 
 class VarInstr(Instr):
-    """仅超类。操作变量、常量的指令。
-    Superclass only.Instructions for operating variables and constants."""
+    """仅超类。操作变量、常量的指令。"""
     table = []
 
     def __init__(self, opc, arg, func, val: bool = False):
@@ -109,14 +101,12 @@ class VarInstr(Instr):
 
     @property
     def var(self):
-        """操作目标
-        operating target"""
+        """操作目标"""
         return self._var
 
     @var.setter
     def var(self, val):
-        """获取操作目标
-        Setter for operating variable"""
+        """获取操作目标"""
         self.arg = self.table.index(val)
         self._var = val
 
@@ -125,8 +115,7 @@ class VarInstr(Instr):
 
 
 class LocalInstr(VarInstr):
-    """opcode.haslocal中的操作码
-    Opcodes in opcode.haslocal"""
+    """opcode.haslocal中的操作码"""
     def __init__(self, opc, arg, func, val: bool = False):
         self.table = func.varnames
         super().__init__(opc, arg, func, val)
@@ -136,8 +125,7 @@ class LocalInstr(VarInstr):
 
 
 class ConstInstr(VarInstr):
-    """opcode.hasconst中的操作码
-    Opcodes in opcode.hasconst"""
+    """opcode.hasconst中的操作码"""
     def __init__(self, opc, arg, func, val: bool = False):
         self.table = func.consts
         super().__init__(opc, arg, func, val)
@@ -147,8 +135,7 @@ class ConstInstr(VarInstr):
 
 
 class NameInstr(VarInstr):
-    """opcode.hasname中的操作码
-    Opcodes in opcode.hasname"""
+    """opcode.hasname中的操作码"""
     def __init__(self, opc, arg, func, val: bool = False):
         self.table = func.names
         super().__init__(opc, arg, func, val)
@@ -158,8 +145,7 @@ class NameInstr(VarInstr):
 
 
 class FreeInstr(VarInstr):
-    """opcode.hasfree中的操作码
-    Opcodes in opcode.hasfree"""
+    """opcode.hasfree中的操作码"""
     def __init__(self, opc, arg, func, val: bool = False):
         self.table = func.freevars
         super().__init__(opc, arg, func, val)
@@ -169,8 +155,7 @@ class FreeInstr(VarInstr):
 
 
 class JrelInstr(Instr):
-    """opcode.hasjrel中的操作码
-    Opcodes in opcode.hasjrel"""
+    """opcode.hasjrel中的操作码"""
     def disasm(self):
         return "%s +%s" % (self.nopc, self.arg)
 
@@ -179,8 +164,7 @@ class JrelInstr(Instr):
 
 
 class JabsInstr(Instr):
-    """opcode.hasjabs中的操作码
-    Opcodes in opcode.hasjabs"""
+    """opcode.hasjabs中的操作码"""
     def disasm(self):
         return "%s %s" % (self.nopc, self.arg)
 
@@ -189,8 +173,7 @@ class JabsInstr(Instr):
 
 
 class CompareInstr(Instr):
-    """opcode.hascompare中的操作码
-    Opcodes in opcode.hascompare"""
+    """opcode.hascompare中的操作码"""
     def __init__(self, opc, arg, func):
         super().__init__(opc, arg, func)
         self._op = opcode.cmp_op[arg]
@@ -200,14 +183,12 @@ class CompareInstr(Instr):
 
     @property
     def cmp_op(self):
-        """比较操作码
-        Comparing op"""
+        """比较操作码"""
         return self._op
 
     @cmp_op.setter
     def cmp_op(self, val):
-        """设置比较操作码
-        Setter for compare op."""
+        """设置比较操作码"""
         self.arg = opcode.cmp_op.index(val)
         self._op = val
 

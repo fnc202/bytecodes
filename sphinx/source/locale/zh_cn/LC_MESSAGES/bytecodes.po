@@ -1,0 +1,316 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, 方南承
+# This file is distributed under the same license as the bytecodes package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: bytecodes \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-25 20:14+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/bytecodes.rst:2
+msgid "bytecodes package"
+msgstr "bytecodes包"
+
+#: ../../source/bytecodes.rst:5
+msgid "Submodules"
+msgstr "子模块"
+
+#: ../../source/bytecodes.rst:8
+msgid "bytecodes.func module"
+msgstr ""
+
+#: bytecodes.func:1 of
+msgid "修改Python方法、函数中的一切！"
+msgstr "修改Python方法、函数中的一切！"
+
+#: bytecodes.func.Func:1 bytecodes.insn.Instr:1 of
+msgid "基类：:py:class:`object`"
+msgstr "基类：:py:class:`object`"
+
+#: bytecodes.func.Func:1 of
+msgid "允许操作代码与其他东西"
+msgstr "允许操作代码与其他东西"
+
+#: bytecodes.func.Func:5 of
+msgid "常量列表"
+msgstr "常量列表"
+
+#: bytecodes.func.Func of
+msgid "type"
+msgstr ""
+
+#: bytecodes.func.Func:7 bytecodes.func.Func:13 bytecodes.func.Func:19
+#: bytecodes.func.Func:25 bytecodes.func.Func:37 bytecodes.func.Func:97 of
+msgid "list"
+msgstr ""
+
+#: bytecodes.func.Func:11 of
+msgid "全局变量列表"
+msgstr ""
+
+#: bytecodes.func.Func:17 of
+msgid "局部变量表"
+msgstr ""
+
+#: bytecodes.func.Func:23 of
+msgid "自由（？）变量表"
+msgstr ""
+
+#: bytecodes.func.Func:29 of
+msgid "参数数量"
+msgstr ""
+
+#: bytecodes.func.Func:31 bytecodes.func.Func:49 bytecodes.func.Func:55
+#: bytecodes.func.Func:61 bytecodes.func.Func:79 bytecodes.func.Func:85
+#: bytecodes.func.Func:91 of
+msgid "int"
+msgstr ""
+
+#: bytecodes.func.Func:35 of
+msgid "？"
+msgstr ""
+
+#: bytecodes.func.Func:41 of
+msgid "文件名"
+msgstr ""
+
+#: bytecodes.func.Func:43 bytecodes.func.Func:73 of
+msgid "str"
+msgstr ""
+
+#: bytecodes.func.Func:47 of
+msgid "第一行行号"
+msgstr ""
+
+#: bytecodes.func.Func:53 of
+msgid "标志位，一般为67"
+msgstr ""
+
+#: bytecodes.func.Func:59 of
+msgid "仅关键字参数量"
+msgstr ""
+
+#: bytecodes.func.Func:65 of
+msgid "行号表"
+msgstr ""
+
+#: bytecodes.func.Func:67 of
+msgid "bytes"
+msgstr ""
+
+#: bytecodes.func.Func:71 of
+msgid "名称"
+msgstr ""
+
+#: bytecodes.func.Func:77 of
+msgid "局部变量数"
+msgstr ""
+
+#: bytecodes.func.Func:83 of
+msgid "仅位置字参数量"
+msgstr ""
+
+#: bytecodes.func.Func:89 of
+msgid "栈大小，一般为11"
+msgstr ""
+
+#: bytecodes.func.Func:95 of
+msgid "指令表"
+msgstr ""
+
+#: bytecodes.func.Func bytecodes.func.Func.fromfunction of
+msgid "参数"
+msgstr ""
+
+#: bytecodes.func.Func:99 of
+msgid "如为None，调用emptyinit，否则调用fromfunction"
+msgstr ""
+
+#: bytecodes.func.Func.disasm:1 of
+msgid "显示反汇编结果"
+msgstr ""
+
+#: bytecodes.func.Func.emptyinit:1 of
+msgid "创建空Func对象"
+msgstr ""
+
+#: bytecodes.func.Func.fromfunction:1 of
+msgid "通过真正的函数、方法创建Func对象"
+msgstr ""
+
+#: bytecodes.func.Func.fromfunction:3 of
+msgid "原函数"
+msgstr ""
+
+#: bytecodes.func.Func.tobytes:1 of
+msgid "转换为字节码"
+msgstr ""
+
+#: bytecodes.func.Func.tobytes bytecodes.func.Func.tocode
+#: bytecodes.func.Func.tofunc bytecodes.insn.CompareInstr.check
+#: bytecodes.insn.CompareInstr.disasm bytecodes.insn.ConstInstr.check
+#: bytecodes.insn.FreeInstr.check bytecodes.insn.Instr.check
+#: bytecodes.insn.Instr.disasm bytecodes.insn.Instr.tobytes
+#: bytecodes.insn.JabsInstr.check bytecodes.insn.JabsInstr.disasm
+#: bytecodes.insn.JrelInstr.check bytecodes.insn.JrelInstr.disasm
+#: bytecodes.insn.LocalInstr.check bytecodes.insn.NameInstr.check
+#: bytecodes.insn.VarInstr.check bytecodes.insn.VarInstr.disasm of
+msgid "返回"
+msgstr ""
+
+#: bytecodes.func.Func.tobytes:3 bytecodes.insn.Instr.tobytes:3 of
+msgid "字节码"
+msgstr ""
+
+#: bytecodes.func.Func.tobytes bytecodes.func.Func.tocode
+#: bytecodes.func.Func.tofunc bytecodes.insn.CompareInstr.check
+#: bytecodes.insn.CompareInstr.disasm bytecodes.insn.ConstInstr.check
+#: bytecodes.insn.FreeInstr.check bytecodes.insn.Instr.check
+#: bytecodes.insn.Instr.disasm bytecodes.insn.Instr.tobytes
+#: bytecodes.insn.JabsInstr.check bytecodes.insn.JabsInstr.disasm
+#: bytecodes.insn.JrelInstr.check bytecodes.insn.JrelInstr.disasm
+#: bytecodes.insn.LocalInstr.check bytecodes.insn.NameInstr.check
+#: bytecodes.insn.VarInstr.check bytecodes.insn.VarInstr.disasm of
+msgid "返回类型"
+msgstr ""
+
+#: bytecodes.func.Func.tocode:1 of
+msgid "转换为code对象"
+msgstr ""
+
+#: bytecodes.func.Func.tocode:3 of
+msgid "code对象"
+msgstr ""
+
+#: bytecodes.func.Func.tofunc:1 of
+msgid "转换为真正的函数"
+msgstr ""
+
+#: bytecodes.func.Func.tofunc:3 of
+msgid "真正的函数（能调用的那种）"
+msgstr ""
+
+#: ../../source/bytecodes.rst:16
+msgid "bytecodes.insn module"
+msgstr "bytecodes.insn模块"
+
+#: bytecodes.insn:1 of
+msgid "指令"
+msgstr ""
+
+#: bytecodes.insn.CompareInstr:1 bytecodes.insn.JabsInstr:1
+#: bytecodes.insn.JrelInstr:1 bytecodes.insn.VarInstr:1 of
+msgid "基类：:py:class:`bytecodes.insn.Instr`"
+msgstr ""
+
+#: bytecodes.insn.CompareInstr:1 of
+msgid "opcode.hascompare中的操作码"
+msgstr ""
+
+#: bytecodes.insn.CompareInstr.check:1 bytecodes.insn.ConstInstr.check:1
+#: bytecodes.insn.FreeInstr.check:1 bytecodes.insn.Instr.check:1
+#: bytecodes.insn.JabsInstr.check:1 bytecodes.insn.JrelInstr.check:1
+#: bytecodes.insn.LocalInstr.check:1 bytecodes.insn.NameInstr.check:1
+#: bytecodes.insn.VarInstr.check:1 of
+msgid "检查操作码和其他东西"
+msgstr ""
+
+#: bytecodes.insn.CompareInstr.check:3 bytecodes.insn.ConstInstr.check:3
+#: bytecodes.insn.FreeInstr.check:3 bytecodes.insn.Instr.check:3
+#: bytecodes.insn.JabsInstr.check:3 bytecodes.insn.JrelInstr.check:3
+#: bytecodes.insn.LocalInstr.check:3 bytecodes.insn.NameInstr.check:3
+#: bytecodes.insn.VarInstr.check:3 of
+msgid "检查结果"
+msgstr ""
+
+#: bytecodes.insn.CompareInstr.cmp_op:1 of
+msgid "比较操作码"
+msgstr ""
+
+#: bytecodes.insn.CompareInstr.disasm:1 bytecodes.insn.Instr.disasm:1
+#: bytecodes.insn.JabsInstr.disasm:1 bytecodes.insn.JrelInstr.disasm:1
+#: bytecodes.insn.VarInstr.disasm:1 of
+msgid "返回反编译结果"
+msgstr ""
+
+#: bytecodes.insn.CompareInstr.disasm:3 bytecodes.insn.Instr.disasm:3
+#: bytecodes.insn.JabsInstr.disasm:3 bytecodes.insn.JrelInstr.disasm:3
+#: bytecodes.insn.VarInstr.disasm:3 of
+msgid "反汇编结果"
+msgstr ""
+
+#: bytecodes.insn.ConstInstr:1 bytecodes.insn.FreeInstr:1
+#: bytecodes.insn.LocalInstr:1 bytecodes.insn.NameInstr:1 of
+msgid "基类：:py:class:`bytecodes.insn.VarInstr`"
+msgstr ""
+
+#: bytecodes.insn.ConstInstr:1 of
+msgid "opcode.hasconst中的操作码"
+msgstr ""
+
+#: bytecodes.insn.FreeInstr:1 of
+msgid "opcode.hasfree中的操作码"
+msgstr ""
+
+#: bytecodes.insn.Instr:1 of
+msgid "其他指令"
+msgstr ""
+
+#: bytecodes.insn.Instr.opc:1 of
+msgid "操作码"
+msgstr ""
+
+#: bytecodes.insn.Instr.tobytes:1 of
+msgid "转为字节码"
+msgstr ""
+
+#: bytecodes.insn.JabsInstr:1 of
+msgid "opcode.hasjabs中的操作码"
+msgstr ""
+
+#: bytecodes.insn.JrelInstr:1 of
+msgid "opcode.hasjrel中的操作码"
+msgstr ""
+
+#: bytecodes.insn.LocalInstr:1 of
+msgid "opcode.haslocal中的操作码"
+msgstr ""
+
+#: bytecodes.insn.NameInstr:1 of
+msgid "opcode.hasname中的操作码"
+msgstr ""
+
+#: bytecodes.insn.VarInstr:1 of
+msgid "仅超类。操作变量、常量的指令。"
+msgstr ""
+
+#: bytecodes.insn.VarInstr.var:1 of
+msgid "操作目标"
+msgstr ""
+
+#: ../../source/bytecodes.rst:24
+msgid "bytecodes.test module"
+msgstr "bytecodes.test模块"
+
+#: bytecodes.test:1 of
+msgid "Testing."
+msgstr "测试"
+
+#: bytecodes.test.test:1 of
+msgid "仅为测试工具"
+msgstr ""
+
+#: ../../source/bytecodes.rst:32
+msgid "Module contents"
+msgstr "模块内容"
+

@@ -8,7 +8,7 @@ TEST_E = 1
 
 
 def test(num):
-    """Just a testing tool."""
+    """仅为测试工具"""
     print(TEST_D, TEST_E)
     num_and_two = 2+num
     if num_and_two > 0:

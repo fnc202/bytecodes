@@ -1,5 +1,4 @@
-"""修改Python方法、函数中的一切！
-Change everything in a function/method!"""
+"""修改Python方法、函数中的一切！"""
 import typing
 import types
 import opcode
@@ -9,7 +8,6 @@ from bytecodes.insn import NameInstr, ConstInstr, LocalInstr, CompareInstr
 
 class Func:
     """允许操作代码与其他东西
-    Able to change code and others
 
     Attributes:
         consts (list): 常量列表
@@ -41,7 +39,6 @@ class Func:
 
     def fromfunction(self, func: types.FunctionType):
         """通过真正的函数、方法创建Func对象
-        Create Func object by a real function/method.
 
         Args:
             func (FunctionType): 原函数
@@ -87,8 +84,7 @@ class Func:
         self.ins = ins
 
     def emptyinit(self):
-        """创建空Func对象
-        Create a empty Func object"""
+        """创建空Func对象"""
         self.globals = {}
         self.consts = []
         self.names = []
@@ -108,8 +104,7 @@ class Func:
         self.ins = []
 
     def disasm(self):
-        """显示反汇编结果
-        Show disassembly result"""
+        """显示反汇编结果"""
         addr = 0
         for i in self.ins:
             print(addr, i.disasm())
@@ -117,7 +112,6 @@ class Func:
 
     def tobytes(self) -> bytes:
         """转换为字节码
-        Convert Func object to bytecode
 
         Returns:
             bytes: 字节码
@@ -129,7 +123,6 @@ class Func:
 
     def tocode(self) -> types.CodeType:
         """转换为code对象
-        Convert Func object to code object
 
         Returns:
             CodeType: code对象
@@ -146,7 +139,6 @@ class Func:
 
     def tofunc(self) -> types.FunctionType:
         """转换为真正的函数
-        Convert Func object to real function
 
         Returns:
             FunctionType: 真正的函数（能调用的那种）

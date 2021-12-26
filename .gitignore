@@ -2,4 +2,6 @@ dist/
 build/
 *.egg-info
 __pycache__
-sphinx
+sphinx/build
+sphinx/source/_build
+*.mo
