@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bytecodes \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-25 19:50+0800\n"
+"POT-Creation-Date: 2021-12-26 13:27+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,29 +19,28 @@ msgstr ""
 
 #: ../../source/index.rst:9
 msgid "Contents:"
-msgstr ""
+msgstr "目录"
 
 #: ../../source/index.rst:7
 msgid "Welcome to bytecodes's documentation!"
-msgstr ""
+msgstr "欢迎来到bytecodes文档！"
 
 #: ../../source/index.rst:17
 msgid "Indices and tables"
-msgstr ""
+msgstr "索引和表格"
 
 #: ../../source/index.rst:19
-msgid ":ref:`tutorial`"
-msgstr ""
-
-#: ../../source/index.rst:20
 msgid ":ref:`genindex`"
 msgstr ""
 
-#: ../../source/index.rst:21
+#: ../../source/index.rst:20
 msgid ":ref:`modindex`"
 msgstr ""
 
-#: ../../source/index.rst:22
+#: ../../source/index.rst:21
 msgid ":ref:`search`"
 msgstr ""
+
+#~ msgid ":ref:`tutorial`"
+#~ msgstr ""
 

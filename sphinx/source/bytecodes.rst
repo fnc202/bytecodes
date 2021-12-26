@@ -19,19 +19,3 @@ bytecodes.insn module
    :members:
    :undoc-members:
    :show-inheritance:
-
-bytecodes.test module
----------------------
-
-.. automodule:: bytecodes.test
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-Module contents
----------------
-
-.. automodule:: bytecodes
-   :members:
-   :undoc-members:
-   :show-inheritance:

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bytecodes \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-25 20:14+0800\n"
+"POT-Creation-Date: 2021-12-26 13:27+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -298,19 +298,15 @@ msgstr ""
 msgid "操作目标"
 msgstr ""
 
-#: ../../source/bytecodes.rst:24
-msgid "bytecodes.test module"
-msgstr "bytecodes.test模块"
+#~ msgid "bytecodes.test module"
+#~ msgstr "bytecodes.test模块"
 
-#: bytecodes.test:1 of
-msgid "Testing."
-msgstr "测试"
+#~ msgid "Testing."
+#~ msgstr "测试"
 
-#: bytecodes.test.test:1 of
-msgid "仅为测试工具"
-msgstr ""
+#~ msgid "仅为测试工具"
+#~ msgstr ""
 
-#: ../../source/bytecodes.rst:32
-msgid "Module contents"
-msgstr "模块内容"
+#~ msgid "Module contents"
+#~ msgstr "模块内容"
 

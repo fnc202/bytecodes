@@ -27,7 +27,7 @@ msgstr "通过PIP"
 
 #: ../../source/docs/tutorials/install.rst:5
 msgid "Open the console, type this command: ::"
-msgstr "打开控制台，输入如下命令：::"
+msgstr "打开控制台，输入如下命令："
 
 #: ../../source/docs/tutorials/install.rst:10
 msgid "From source"
@@ -35,7 +35,7 @@ msgstr "通过源码"
 
 #: ../../source/docs/tutorials/install.rst:11
 msgid "Use this command: ::"
-msgstr "使用此命令：::"
+msgstr "使用此命令："
 
 #: ../../source/docs/tutorials/install.rst:17
 msgid "Good luck!"

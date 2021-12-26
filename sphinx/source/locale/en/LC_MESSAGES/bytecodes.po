@@ -145,8 +145,8 @@ msgid "创建空Func对象 Create a empty Func object"
 msgstr "Create a empty Func object"
 
 #: bytecodes.func.Func.fromfunction:1 of
-msgid "通过真正的函数、方法创建Func对象 Create Func object by a real function/method."
-msgstr "Create Func object by a real function/method."
+msgid "通过真正的函数、方法创建Func对象 Create Func object by a function/method."
+msgstr "Create Func object by a function/method."
 
 #: bytecodes.func.Func.fromfunction:4 of
 msgid "原函数"
@@ -194,11 +194,11 @@ msgstr "code object"
 
 #: bytecodes.func.Func.tofunc:1 of
 msgid "转换为真正的函数 Convert Func object to real function"
-msgstr "Convert Func object to real function"
+msgstr "Convert Func object to function"
 
 #: bytecodes.func.Func.tofunc:4 of
 msgid "真正的函数（能调用的那种）"
-msgstr "Real function (the one that can be called)"
+msgstr "function (the one that can be called)"
 
 #: ../../source/bytecodes.rst:16
 msgid "bytecodes.insn module"
