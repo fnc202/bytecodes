@@ -90,7 +90,11 @@ class VarInstr(Instr):
             val(bool): arg是值（True）还是co_xxx的索引（False）
         """
         if val:
-            arg = self.table.index(arg)
+            try:
+                arg = self.table.index(arg)
+            except ValueError:
+                self.table.append(arg)
+                arg = self.table.index(arg)
             self._var = arg
         else:
             self._var = self.table[arg]

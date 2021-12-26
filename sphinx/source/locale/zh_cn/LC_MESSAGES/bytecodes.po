@@ -27,7 +27,7 @@ msgstr "子模块"
 
 #: ../../source/bytecodes.rst:8
 msgid "bytecodes.func module"
-msgstr ""
+msgstr "bytecodes.func模块"
 
 #: bytecodes.func:1 of
 msgid "修改Python方法、函数中的一切！"

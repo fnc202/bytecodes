@@ -25,7 +25,7 @@ copyright = '2021, 方南承'
 author = '方南承'
 
 # The full version, including alpha/beta/rc tags
-release = '0.0.1-alpha-3'
+release = '0.0.1-beta'
 
 
 # -- General configuration ---------------------------------------------------
@@ -38,6 +38,7 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinxcontrib.napoleon',
     'sphinx.ext.doctest',
+    'sphinx.ext.intersphinx',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -70,3 +71,4 @@ html_static_path = ['_static']
 napoleon_google_docstring = True
 locale_dirs = ['locale/']
 gettext_compact = False
+intersphinx_mapping = {'python': ('https://docs.python.org/3.8', None)}

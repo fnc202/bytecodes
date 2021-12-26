@@ -20,8 +20,6 @@ def test(num):
 # pylint: disable=not-callable
 fo = Func(test)
 print(fo.consts)
-fo.varnames.append("z")
-fo.consts.append(114514)
 fo.ins[28] = LocalInstr("STORE_FAST", "z", fo, True)
 fo.ins.append(LocalInstr("LOAD_FAST", "z", fo, True))
 fo.ins.append(ConstInstr("LOAD_CONST", 114514, fo, True))

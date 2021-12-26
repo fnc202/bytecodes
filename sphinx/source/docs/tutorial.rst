@@ -6,3 +6,4 @@ Tutorials
    
    tutorials/install.rst
    tutorials/firststep.rst
+   

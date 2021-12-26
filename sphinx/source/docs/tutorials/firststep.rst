@@ -1,6 +1,7 @@
 First step
 ==========
 You will learn how to use :py:class:`bytecodes.func.Func` and :py:class:`bytecodes.insn.Instr` in this passage.
+All bytecode instructions are here: :ref:`the dis module <bytecodes>`
 
 Task
 ----
@@ -49,10 +50,6 @@ Let's test it!
 -1
 >>> subtract(1, 10) 
 -9
->>> subtract(0, 10) 
--10
->>> subtract(5, 10) 
--5
 
 Full code:
 ::

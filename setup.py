@@ -2,7 +2,7 @@ from setuptools import setup, find_namespace_packages
 
 setup(
     name="bytecodes",
-    version="0.0.1-alpha-3",
+    version="0.0.1-beta",
     description="修改函数中的一切！/Change everything in a function!",
     long_description="""
         修改函数中的一切！

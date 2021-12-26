@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bytecodes \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-26 13:27+0800\n"
+"POT-Creation-Date: 2021-12-26 15:45+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,78 +24,73 @@ msgstr "第一步"
 #: ../../source/docs/tutorials/firststep.rst:3
 msgid ""
 "You will learn how to use :py:class:`bytecodes.func.Func` and "
-":py:class:`bytecodes.insn.Instr` in this passage."
+":py:class:`bytecodes.insn.Instr` in this passage. All bytecode "
+"instructions are here: :ref:`the dis module <bytecodes>`"
 msgstr ""
-"这篇文章中，你会学到如何使用 :py:class:`bytecodes.func.Func` 与"
-" :py:class:`bytecodes.insn.Instr` "
+"这篇文章中，你会学到如何使用 :py:class:`bytecodes.func.Func` 与 "
+":py:class:`bytecodes.insn.Instr` 。所有字节码指令： :ref:`the dis module <bytecodes>`"
 
-#: ../../source/docs/tutorials/firststep.rst:6
+#: ../../source/docs/tutorials/firststep.rst:7
 msgid "Task"
 msgstr "任务"
 
-#: ../../source/docs/tutorials/firststep.rst:7
+#: ../../source/docs/tutorials/firststep.rst:8
 msgid "Here is a python function: ::"
 msgstr "这是一个Python函数： ::"
 
-#: ../../source/docs/tutorials/firststep.rst:12
+#: ../../source/docs/tutorials/firststep.rst:13
 msgid ""
 "Now we want to create a new function named \"subtract\" by editing the "
 "bytecode of the function \"add\", which will perform subtraction. How to "
 "do that?"
-msgstr ""
-"现在我们要通过修改\"add\"的字节码创建一个名为\"subtract\"的新函数，它会执行减法。怎么做？"
+msgstr "现在我们要通过修改\"add\"的字节码创建一个名为\"subtract\"的新函数，它会执行减法。怎么做？"
 
-#: ../../source/docs/tutorials/firststep.rst:15
+#: ../../source/docs/tutorials/firststep.rst:16
 msgid "How to do that?"
 msgstr "怎么做？"
 
-#: ../../source/docs/tutorials/firststep.rst:16
+#: ../../source/docs/tutorials/firststep.rst:17
 msgid ""
 "We can make a function editable by :py:class:`bytecodes.func.Func`. So we"
 " should create a :py:class:`bytecodes.func.Func` object.::"
 msgstr ""
-"我们可以通过 :py:class:`bytecodes.func.Func` 使函数可编辑。"
-"所以我们应当创建一个 :py:class:`bytecodes.func.Func` 对象。"
+"我们可以通过 :py:class:`bytecodes.func.Func` 使函数可编辑。所以我们应当创建一个 "
+":py:class:`bytecodes.func.Func` 对象。"
 
-#: ../../source/docs/tutorials/firststep.rst:20
+#: ../../source/docs/tutorials/firststep.rst:21
 msgid "What happens?"
 msgstr "发生了什么？"
 
-#: ../../source/docs/tutorials/firststep.rst:22
+#: ../../source/docs/tutorials/firststep.rst:23
 msgid ""
 "Func.\\__init\\__ reads the function \\\"add\\\"\\'s bytecode. We can "
 "edit it now. Let's look at its bytecode."
-msgstr ""
-"Func.\\__init\\__读取函数\\\"add\\\"的字节码。现在我们可以编辑它了。"
-"让我们看看它的字节码。"
+msgstr "Func.\\__init\\__读取函数\\\"add\\\"的字节码。现在我们可以编辑它了。让我们看看它的字节码。"
 
-#: ../../source/docs/tutorials/firststep.rst:30
+#: ../../source/docs/tutorials/firststep.rst:31
 msgid ""
 "Look at the instuction \\\"BINARY_ADD\\\". It performs an addition "
 "operation. It takes two numbers from the top of the stack and puts the "
 "result back on the stack. The instruction \\\"BINARY_SUBTRACT\\\" "
 "performs a subtraction operation. We can change BINARY_ADD to "
 "BINARY_SUBTRACT to slove the problem. ::"
-msgstr ""
-"看指令\\\"BINARY_ADD\\\"。它执行加法。它从栈中取出两个数，把结果放回栈。"
-"指令\\\"BINARY_SUBTRACT\\\"执行减法。我们可以改BINARY_ADD为BINARY_SUBTRACT来解决问题。"
+msgstr "看指令\\\"BINARY_ADD\\\"。它执行加法。它从栈中取出两个数，把结果放回栈。指令\\\"BINARY_SUBTRACT\\\"执行减法。我们可以改BINARY_ADD为BINARY_SUBTRACT来解决问题。"
 
-#: ../../source/docs/tutorials/firststep.rst:36
+#: ../../source/docs/tutorials/firststep.rst:37
 msgid "Change the name. ::"
 msgstr "修改名称。"
 
-#: ../../source/docs/tutorials/firststep.rst:40
+#: ../../source/docs/tutorials/firststep.rst:41
 msgid ""
 "Finally, we have to convert the :py:class:`bytecodes.func.Func` object "
 "into a function to run. ::"
-msgstr ""
-"最后，我们要把 :py:class:`bytecodes.func.Func` 对象转换回函数来运行。"
+msgstr "最后，我们要把 :py:class:`bytecodes.func.Func` 对象转换回函数来运行。"
 
-#: ../../source/docs/tutorials/firststep.rst:44
+#: ../../source/docs/tutorials/firststep.rst:45
 msgid "Let's test it!"
 msgstr "让我们测试它！"
 
-#: ../../source/docs/tutorials/firststep.rst:57
+#: ../../source/docs/tutorials/firststep.rst:54
 msgid "Full code: ::"
 msgstr "完整代码："
 

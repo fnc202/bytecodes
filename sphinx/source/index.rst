@@ -16,6 +16,7 @@ Welcome to bytecodes's documentation!
 Indices and tables
 ==================
 
+* :ref:`the dis module <bytecodes>`
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
