@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bytecodes \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-25 19:50+0800\n"
+"POT-Creation-Date: 2021-12-26 22:25+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,7 +30,7 @@ msgid "bytecodes.func module"
 msgstr "bytecodes.func module"
 
 #: bytecodes.func:1 of
-msgid "修改Python方法、函数中的一切！ Change everything in a function/method!"
+msgid "修改Python方法、函数中的一切！"
 msgstr "Change everything in a function/method!"
 
 #: bytecodes.func.Func:1 bytecodes.insn.Instr:1 of
@@ -38,10 +38,10 @@ msgid "基类：:py:class:`object`"
 msgstr "Base class::py:class:`object`"
 
 #: bytecodes.func.Func:1 of
-msgid "允许操作代码与其他东西 Able to change code and others"
+msgid "允许操作代码与其他东西"
 msgstr "Able to change code and others"
 
-#: bytecodes.func.Func:6 of
+#: bytecodes.func.Func:5 of
 msgid "常量列表"
 msgstr "Constants"
 
@@ -49,112 +49,129 @@ msgstr "Constants"
 msgid "type"
 msgstr "type"
 
-#: bytecodes.func.Func:8 bytecodes.func.Func:14 bytecodes.func.Func:20
-#: bytecodes.func.Func:26 bytecodes.func.Func:38 bytecodes.func.Func:98 of
+#: bytecodes.func.Func:7 bytecodes.func.Func:13 bytecodes.func.Func:19
+#: bytecodes.func.Func:25 bytecodes.func.Func:37 bytecodes.func.Func:97 of
 msgid "list"
 msgstr "list"
 
-#: bytecodes.func.Func:12 of
+#: bytecodes.func.Func:11 of
 msgid "全局变量列表"
 msgstr "Global variables"
 
-#: bytecodes.func.Func:18 of
+#: bytecodes.func.Func:17 of
 msgid "局部变量表"
 msgstr "Local variables"
 
-#: bytecodes.func.Func:24 of
+#: bytecodes.func.Func:23 of
 msgid "自由（？）变量表"
 msgstr "freevars(?)"
 
-#: bytecodes.func.Func:30 of
+#: bytecodes.func.Func:29 of
 msgid "参数数量"
 msgstr "arguments count"
 
-#: bytecodes.func.Func:32 bytecodes.func.Func:50 bytecodes.func.Func:56
-#: bytecodes.func.Func:62 bytecodes.func.Func:80 bytecodes.func.Func:86
-#: bytecodes.func.Func:92 of
+#: bytecodes.func.Func:31 bytecodes.func.Func:49 bytecodes.func.Func:55
+#: bytecodes.func.Func:61 bytecodes.func.Func:79 bytecodes.func.Func:85
+#: bytecodes.func.Func:91 of
 msgid "int"
 msgstr "int"
 
-#: bytecodes.func.Func:36 of
-msgid "？"
-msgstr "?"
+#: bytecodes.func.Func:35 of
+msgid "被嵌套的函数所引用的局部变量表"
+msgstr "The local variable table referenced by the nested function"
 
-#: bytecodes.func.Func:42 of
+#: bytecodes.func.Func:41 of
 msgid "文件名"
 msgstr "file name"
 
-#: bytecodes.func.Func:44 bytecodes.func.Func:74 of
+#: bytecodes.func.Func:43 bytecodes.func.Func:73 of
 msgid "str"
 msgstr "str"
 
-#: bytecodes.func.Func:48 of
+#: bytecodes.func.Func:47 of
 msgid "第一行行号"
 msgstr "first line no"
 
-#: bytecodes.func.Func:54 of
+#: bytecodes.func.Func:53 of
 msgid "标志位，一般为67"
 msgstr "Flag, generally 67"
 
-#: bytecodes.func.Func:60 of
+#: bytecodes.func.Func:59 of
 msgid "仅关键字参数量"
 msgstr "Keyword only arguments count"
 
-#: bytecodes.func.Func:66 of
+#: bytecodes.func.Func:65 of
 msgid "行号表"
 msgstr "line no table"
 
-#: bytecodes.func.Func:68 of
+#: bytecodes.func.Func:67 of
 msgid "bytes"
 msgstr "bytes"
 
-#: bytecodes.func.Func:72 of
+#: bytecodes.func.Func:71 of
 msgid "名称"
 msgstr "name"
 
-#: bytecodes.func.Func:78 of
+#: bytecodes.func.Func:77 of
 msgid "局部变量数"
 msgstr "local variables count"
 
-#: bytecodes.func.Func:84 of
+#: bytecodes.func.Func:83 of
 msgid "仅位置字参数量"
 msgstr "Position only arguments count"
 
-#: bytecodes.func.Func:90 of
+#: bytecodes.func.Func:89 of
 msgid "栈大小，一般为11"
 msgstr "stack size, generally 11"
 
-#: bytecodes.func.Func:96 of
+#: bytecodes.func.Func:95 of
 msgid "指令表"
 msgstr "instructions"
 
-#: bytecodes.func.Func bytecodes.func.Func.fromfunction of
+#: bytecodes.func.Func bytecodes.func.Func.fromcode
+#: bytecodes.func.Func.fromfunction bytecodes.func.Func.fromgenerator of
 msgid "参数"
 msgstr "arguments"
 
-#: bytecodes.func.Func:100 of
-msgid "If none, call emptyinit; otherwise, call fromfunction"
-msgstr ""
+#: bytecodes.func.Func:99 of
+msgid "如为None，调用emptyinit，否则调用fromfunction"
+msgstr "If none, call emptyinit; otherwise, call fromfunction"
 
 #: bytecodes.func.Func.disasm:1 of
-msgid "显示反汇编结果 Show disassembly result"
-msgstr "Show disassembly result"
+msgid "显示反汇编结果"
+msgstr "Disassembly result"
 
 #: bytecodes.func.Func.emptyinit:1 of
-msgid "创建空Func对象 Create a empty Func object"
-msgstr "Create a empty Func object"
+msgid "创建空Func对象"
+msgstr "Create empty Func object"
+
+#: bytecodes.func.Func.fromcode:1 of
+msgid "通过真正的code对象创建Func对象"
+msgstr "Create a func object from a real code object."
+
+#: bytecodes.func.Func.fromcode:3 of
+msgid "原code对象"
+msgstr "original code object"
 
 #: bytecodes.func.Func.fromfunction:1 of
-msgid "通过真正的函数、方法创建Func对象 Create Func object by a function/method."
-msgstr "Create Func object by a function/method."
+msgid "通过真正的函数、方法创建Func对象"
+msgstr "Create func objects through functions and methods"
 
-#: bytecodes.func.Func.fromfunction:4 of
+#: bytecodes.func.Func.fromfunction:3 of
 msgid "原函数"
-msgstr "Original function"
+msgstr "original function"
+
+#: bytecodes.func.Func.fromgenerator:1 of
+msgid "通过真正的生成器创建Func对象"
+msgstr "Create func objects through real generators"
+
+#: bytecodes.func.Func.fromgenerator:3 of
+msgid "原生成器"
+msgstr "original generator"
 
 #: bytecodes.func.Func.tobytes:1 of
-msgid "转换为字节码 Convert Func object to bytecode"
-msgstr "Convert Func object to bytecode"
+msgid "转换为字节码"
+msgstr "bytecodes"
 
 #: bytecodes.func.Func.tobytes bytecodes.func.Func.tocode
 #: bytecodes.func.Func.tofunc bytecodes.insn.CompareInstr.check
@@ -168,7 +185,7 @@ msgstr "Convert Func object to bytecode"
 msgid "返回"
 msgstr "Returns"
 
-#: bytecodes.func.Func.tobytes:4 bytecodes.insn.Instr.tobytes:4 of
+#: bytecodes.func.Func.tobytes:3 bytecodes.insn.Instr.tobytes:3 of
 msgid "字节码"
 msgstr "bytecodes"
 
@@ -185,18 +202,18 @@ msgid "返回类型"
 msgstr "Returns type"
 
 #: bytecodes.func.Func.tocode:1 of
-msgid "转换为code对象 Convert Func object to code object"
-msgstr "Convert Func object to code object"
+msgid "转换为code对象"
+msgstr "code object"
 
-#: bytecodes.func.Func.tocode:4 of
+#: bytecodes.func.Func.tocode:3 of
 msgid "code对象"
 msgstr "code object"
 
 #: bytecodes.func.Func.tofunc:1 of
-msgid "转换为真正的函数 Convert Func object to real function"
-msgstr "Convert Func object to function"
+msgid "转换为真正的函数"
+msgstr "Convert to real function"
 
-#: bytecodes.func.Func.tofunc:4 of
+#: bytecodes.func.Func.tofunc:3 of
 msgid "真正的函数（能调用的那种）"
 msgstr "function (the one that can be called)"
 
@@ -205,8 +222,8 @@ msgid "bytecodes.insn module"
 msgstr "bytecodes.insn module"
 
 #: bytecodes.insn:1 of
-msgid "指令 Instructions"
-msgstr "Instructions"
+msgid "指令"
+msgstr "instructions"
 
 #: bytecodes.insn.CompareInstr:1 bytecodes.insn.JabsInstr:1
 #: bytecodes.insn.JrelInstr:1 bytecodes.insn.VarInstr:1 of
@@ -214,7 +231,7 @@ msgid "基类：:py:class:`bytecodes.insn.Instr`"
 msgstr "Base class::py:class:`bytecodes.insn.Instr`"
 
 #: bytecodes.insn.CompareInstr:1 of
-msgid "opcode.hascompare中的操作码 Opcodes in opcode.hascompare"
+msgid "opcode.hascompare中的操作码"
 msgstr "Opcodes in opcode.hascompare"
 
 #: bytecodes.insn.CompareInstr.check:1 bytecodes.insn.ConstInstr.check:1
@@ -222,30 +239,30 @@ msgstr "Opcodes in opcode.hascompare"
 #: bytecodes.insn.JabsInstr.check:1 bytecodes.insn.JrelInstr.check:1
 #: bytecodes.insn.LocalInstr.check:1 bytecodes.insn.NameInstr.check:1
 #: bytecodes.insn.VarInstr.check:1 of
-msgid "检查操作码和其他东西 Checking Opcode and others"
-msgstr "Checking Opcode and others"
+msgid "检查操作码和其他东西"
+msgstr "Check the opcode and other things"
 
-#: bytecodes.insn.CompareInstr.check:4 bytecodes.insn.ConstInstr.check:4
-#: bytecodes.insn.FreeInstr.check:4 bytecodes.insn.Instr.check:4
-#: bytecodes.insn.JabsInstr.check:4 bytecodes.insn.JrelInstr.check:4
-#: bytecodes.insn.LocalInstr.check:4 bytecodes.insn.NameInstr.check:4
-#: bytecodes.insn.VarInstr.check:4 of
+#: bytecodes.insn.CompareInstr.check:3 bytecodes.insn.ConstInstr.check:3
+#: bytecodes.insn.FreeInstr.check:3 bytecodes.insn.Instr.check:3
+#: bytecodes.insn.JabsInstr.check:3 bytecodes.insn.JrelInstr.check:3
+#: bytecodes.insn.LocalInstr.check:3 bytecodes.insn.NameInstr.check:3
+#: bytecodes.insn.VarInstr.check:3 of
 msgid "检查结果"
 msgstr "Checking result"
 
 #: bytecodes.insn.CompareInstr.cmp_op:1 of
-msgid "比较操作码 Comparing op"
-msgstr "Comparing op"
+msgid "比较操作码"
+msgstr "Compare opcode"
 
 #: bytecodes.insn.CompareInstr.disasm:1 bytecodes.insn.Instr.disasm:1
 #: bytecodes.insn.JabsInstr.disasm:1 bytecodes.insn.JrelInstr.disasm:1
 #: bytecodes.insn.VarInstr.disasm:1 of
-msgid "返回反编译结果 Returns disassembly result."
-msgstr "Returns disassembly result."
+msgid "返回反编译结果"
+msgstr "Disassembly result"
 
-#: bytecodes.insn.CompareInstr.disasm:4 bytecodes.insn.Instr.disasm:4
-#: bytecodes.insn.JabsInstr.disasm:4 bytecodes.insn.JrelInstr.disasm:4
-#: bytecodes.insn.VarInstr.disasm:4 of
+#: bytecodes.insn.CompareInstr.disasm:3 bytecodes.insn.Instr.disasm:3
+#: bytecodes.insn.JabsInstr.disasm:3 bytecodes.insn.JrelInstr.disasm:3
+#: bytecodes.insn.VarInstr.disasm:3 of
 msgid "反汇编结果"
 msgstr "Disassembly result"
 
@@ -255,65 +272,135 @@ msgid "基类：:py:class:`bytecodes.insn.VarInstr`"
 msgstr "Base class::py:class:`bytecodes.insn.VarInstr`"
 
 #: bytecodes.insn.ConstInstr:1 of
-msgid "opcode.hasconst中的操作码 Opcodes in opcode.hasconst"
+msgid "opcode.hasconst中的操作码"
 msgstr "Opcodes in opcode.hasconst"
 
 #: bytecodes.insn.FreeInstr:1 of
-msgid "opcode.hasfree中的操作码 Opcodes in opcode.hasfree"
+msgid "opcode.hasfree中的操作码"
 msgstr "Opcodes in opcode.hasfree"
 
 #: bytecodes.insn.Instr:1 of
-msgid "其他指令 Other opcodes."
+msgid "其他指令"
 msgstr "Other opcodes."
 
 #: bytecodes.insn.Instr.opc:1 of
-msgid "操作码 opcode"
+msgid "操作码"
 msgstr "opcode"
 
 #: bytecodes.insn.Instr.tobytes:1 of
-msgid "转为字节码 To bytecode."
-msgstr "To bytecode."
+msgid "转为字节码"
+msgstr "bytecodes"
 
 #: bytecodes.insn.JabsInstr:1 of
-msgid "opcode.hasjabs中的操作码 Opcodes in opcode.hasjabs"
+msgid "opcode.hasjabs中的操作码"
 msgstr "Opcodes in opcode.hasjabs"
 
 #: bytecodes.insn.JrelInstr:1 of
-msgid "opcode.hasjrel中的操作码 Opcodes in opcode.hasjrel"
+msgid "opcode.hasjrel中的操作码"
 msgstr "Opcodes in opcode.hasjrel"
 
 #: bytecodes.insn.LocalInstr:1 of
-msgid "opcode.haslocal中的操作码 Opcodes in opcode.haslocal"
+msgid "opcode.haslocal中的操作码"
 msgstr "Opcodes in opcode.haslocal"
 
 #: bytecodes.insn.NameInstr:1 of
-msgid "opcode.hasname中的操作码 Opcodes in opcode.hasname"
+msgid "opcode.hasname中的操作码"
 msgstr "Opcodes in opcode.hasname"
 
 #: bytecodes.insn.VarInstr:1 of
-msgid ""
-"仅超类。操作变量、常量的指令。 Superclass only.Instructions for operating variables and "
-"constants."
-msgstr "Superclass only.Instructions for operating variables and "
-"constants."
+msgid "仅超类。操作变量、常量的指令。"
+msgstr "Superclass only.Instructions for"
 
 #: bytecodes.insn.VarInstr.var:1 of
-msgid "操作目标 operating target"
+msgid "操作目标"
 msgstr "operating target"
 
-#: ../../source/bytecodes.rst:24
-msgid "bytecodes.test module"
-msgstr "bytecodes.test module"
+#~ msgid "修改Python方法、函数中的一切！ Change everything in a function/method!"
+#~ msgstr "Change everything in a function/method!"
 
-#: bytecodes.test:1 of
-msgid "Testing."
-msgstr "Testing."
+#~ msgid "允许操作代码与其他东西 Able to change code and others"
+#~ msgstr "Able to change code and others"
 
-#: bytecodes.test.test:1 of
-msgid "Just a testing tool."
-msgstr "Just a testing tool."
+#~ msgid "？"
+#~ msgstr "?"
 
-#: ../../source/bytecodes.rst:32
-msgid "Module contents"
-msgstr "Module contents"
+#~ msgid "If none, call emptyinit; otherwise, call fromfunction"
+#~ msgstr ""
+
+#~ msgid "显示反汇编结果 Show disassembly result"
+#~ msgstr "Show disassembly result"
+
+#~ msgid "创建空Func对象 Create a empty Func object"
+#~ msgstr "Create a empty Func object"
+
+#~ msgid "通过真正的函数、方法创建Func对象 Create Func object by a function/method."
+#~ msgstr "Create Func object by a function/method."
+
+#~ msgid "转换为字节码 Convert Func object to bytecode"
+#~ msgstr "Convert Func object to bytecode"
+
+#~ msgid "转换为code对象 Convert Func object to code object"
+#~ msgstr "Convert Func object to code object"
+
+#~ msgid "转换为真正的函数 Convert Func object to real function"
+#~ msgstr "Convert Func object to function"
+
+#~ msgid "指令 Instructions"
+#~ msgstr "Instructions"
+
+#~ msgid "检查操作码和其他东西 Checking Opcode and others"
+#~ msgstr "Checking Opcode and others"
+
+#~ msgid "比较操作码 Comparing op"
+#~ msgstr "Comparing op"
+
+#~ msgid "返回反编译结果 Returns disassembly result."
+#~ msgstr "Returns disassembly result."
+
+#~ msgid "opcode.hasconst中的操作码 Opcodes in opcode.hasconst"
+#~ msgstr "Opcodes in opcode.hasconst"
+
+#~ msgid "opcode.hasfree中的操作码 Opcodes in opcode.hasfree"
+#~ msgstr "Opcodes in opcode.hasfree"
+
+#~ msgid "其他指令 Other opcodes."
+#~ msgstr "Other opcodes."
+
+#~ msgid "操作码 opcode"
+#~ msgstr "opcode"
+
+#~ msgid "转为字节码 To bytecode."
+#~ msgstr "To bytecode."
+
+#~ msgid "opcode.hasjabs中的操作码 Opcodes in opcode.hasjabs"
+#~ msgstr "Opcodes in opcode.hasjabs"
+
+#~ msgid "opcode.hasjrel中的操作码 Opcodes in opcode.hasjrel"
+#~ msgstr "Opcodes in opcode.hasjrel"
+
+#~ msgid "opcode.haslocal中的操作码 Opcodes in opcode.haslocal"
+#~ msgstr "Opcodes in opcode.haslocal"
+
+#~ msgid "opcode.hasname中的操作码 Opcodes in opcode.hasname"
+#~ msgstr "Opcodes in opcode.hasname"
+
+#~ msgid ""
+#~ "仅超类。操作变量、常量的指令。 Superclass only.Instructions for "
+#~ "operating variables and constants."
+#~ msgstr "Superclass only.Instructions for operating variables and constants."
+
+#~ msgid "操作目标 operating target"
+#~ msgstr "operating target"
+
+#~ msgid "bytecodes.test module"
+#~ msgstr "bytecodes.test module"
+
+#~ msgid "Testing."
+#~ msgstr "Testing."
+
+#~ msgid "Just a testing tool."
+#~ msgstr "Just a testing tool."
+
+#~ msgid "Module contents"
+#~ msgstr "Module contents"
 

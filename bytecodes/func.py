@@ -6,6 +6,9 @@ from bytecodes.insn import Instr, FreeInstr, JabsInstr, JrelInstr
 from bytecodes.insn import NameInstr, ConstInstr, LocalInstr, CompareInstr
 
 
+NoneType = type(None)
+
+
 class Func:
     """允许操作代码与其他东西
 
@@ -15,7 +18,7 @@ class Func:
         varnames (list): 局部变量表
         freevars (list): 自由（？）变量表
         argcount (int): 参数数量
-        cellvars (list): ？
+        cellvars (list): 被嵌套的函数所引用的局部变量表
         filename (str): 文件名
         firstlineno (int): 第一行行号
         flags (int): 标志位，一般为67
@@ -31,11 +34,14 @@ class Func:
         func(FunctionType/NoneType): 如为None，调用emptyinit，否则调用fromfunction
     """
     # pylint: disable=too-many-instance-attributes
-    def __init__(self, func: typing.Optional[types.FunctionType] = None):
+    def __init__(self, func: typing.Union[NoneType, types.FunctionType,
+                                          types.GeneratorType] = None):
         if func is None:
             self.emptyinit()
-        else:
+        elif isinstance(func, types.FunctionType):
             self.fromfunction(func)
+        else:
+            self.fromgenerator(func)
 
     def fromfunction(self, func: types.FunctionType):
         """通过真正的函数、方法创建Func对象
@@ -43,8 +49,24 @@ class Func:
         Args:
             func (FunctionType): 原函数
         """
-        codeobj: types.CodeType = func.__code__
-        self.globals = func.__globals__
+        codeobj = func.__code__
+        self.fromcode(codeobj)
+
+    def fromgenerator(self, gene: types.GeneratorType):
+        """通过真正的生成器创建Func对象
+
+        Args:
+            gene (GeneratorType): 原生成器
+        """
+        codeobj = gene.gi_frame.f
+        self.fromcode(codeobj)
+
+    def fromcode(self, codeobj: types.CodeType):
+        """通过真正的code对象创建Func对象
+
+        Args:
+            code (CodeType): 原code对象
+        """
         self.consts = list(codeobj.co_consts)
         self.names = list(codeobj.co_names)
         self.varnames = list(codeobj.co_varnames)
@@ -143,5 +165,5 @@ class Func:
         Returns:
             FunctionType: 真正的函数（能调用的那种）
         """
-        func = types.FunctionType(self.tocode(), self.globals)
+        func = types.FunctionType(self.tocode(), globals())
         return func

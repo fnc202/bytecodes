@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bytecodes \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-25 19:54+0800\n"
+"POT-Creation-Date: 2021-12-26 22:14+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: ../../source/docs/tutorial.rst:2
-msgid "Tutorials"
-msgstr ""
+#: ../../source/docs/appendices.rst:2
+msgid "Appendices"
+msgstr "附录"
 

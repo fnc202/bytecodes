@@ -12,6 +12,7 @@ Welcome to bytecodes's documentation!
 
    docs/tutorial.rst
    modules.rst
+   docs/appendices.rst
 
 Indices and tables
 ==================

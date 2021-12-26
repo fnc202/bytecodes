@@ -21,8 +21,8 @@ sys.path.append('..')
 # -- Project information -----------------------------------------------------
 
 project = 'bytecodes'
-copyright = '2021, 方南承'
-author = '方南承'
+copyright = '2021, 方南承(Nancheng Fang)'
+author = '方南承(Nancheng Fang)'
 
 # The full version, including alpha/beta/rc tags
 release = '0.0.1-beta'
