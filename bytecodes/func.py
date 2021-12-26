@@ -1,5 +1,4 @@
-"""修改Python方法、函数中的一切！
-Change everything in a function/method!"""
+"""修改Python方法、函数中的一切！"""
 import typing
 import types
 import opcode
@@ -9,31 +8,30 @@ from bytecodes.insn import NameInstr, ConstInstr, LocalInstr, CompareInstr
 
 class Func:
     """允许操作代码与其他东西
-    Able to change code and others
-    成员：
-        list consts：常量列表
-        list names：全局变量列表
-        list varnames：局部变量表
-        list freevars：自由（？）变量表
-        int argcount：参数数量
-        list cellvars：？
-        str filename：文件名
-        int firstlineno：第一行行号
-        int flags：标志位，一般为67
-        int kwonlyargcount：仅关键字参数量
-        bytes lnotab：行号表
-        str name：名称
-        int nlocals：局部变量数
-        int posonlyargcount：仅位置字参数量
-        int stacksize：栈大小，一般为11
-        list ins：指令表
+
+    Attributes:
+        consts (list): 常量列表
+        names (list): 全局变量列表
+        varnames (list): 局部变量表
+        freevars (list): 自由（？）变量表
+        argcount (int): 参数数量
+        cellvars (list): ？
+        filename (str): 文件名
+        firstlineno (int): 第一行行号
+        flags (int): 标志位，一般为67
+        kwonlyargcount (int): 仅关键字参数量
+        lnotab (bytes): 行号表
+        name (str): 名称
+        nlocals (int): 局部变量数
+        posonlyargcount (int): 仅位置字参数量
+        stacksize (int): 栈大小，一般为11
+        ins (list): 指令表
+
+    Args:
+        func(FunctionType/NoneType): 如为None，调用emptyinit，否则调用fromfunction
     """
     # pylint: disable=too-many-instance-attributes
     def __init__(self, func: typing.Optional[types.FunctionType] = None):
-        """调用fromfunction或emptyinit。
-        参数：
-            FunctionType/NoneType func：如为None，调用emptyinit，否则调用fromfunction
-        """
         if func is None:
             self.emptyinit()
         else:
@@ -41,9 +39,9 @@ class Func:
 
     def fromfunction(self, func: types.FunctionType):
         """通过真正的函数、方法创建Func对象
-        Create Func object by a real function/method.
-        参数：
-            FunctionType func：原函数
+
+        Args:
+            func (FunctionType): 原函数
         """
         codeobj: types.CodeType = func.__code__
         self.globals = func.__globals__
@@ -86,8 +84,7 @@ class Func:
         self.ins = ins
 
     def emptyinit(self):
-        """创建空Func对象
-        Create a empty Func object"""
+        """创建空Func对象"""
         self.globals = {}
         self.consts = []
         self.names = []
@@ -107,8 +104,7 @@ class Func:
         self.ins = []
 
     def disasm(self):
-        """显示反汇编结果
-        Show disassembly result"""
+        """显示反汇编结果"""
         addr = 0
         for i in self.ins:
             print(addr, i.disasm())
@@ -116,8 +112,9 @@ class Func:
 
     def tobytes(self) -> bytes:
         """转换为字节码
-        Convert Func object to bytecode
-        bytes 返回值：字节码
+
+        Returns:
+            bytes: 字节码
         """
         result = []
         for i in self.ins:
@@ -126,8 +123,9 @@ class Func:
 
     def tocode(self) -> types.CodeType:
         """转换为code对象
-        Convert Func object to code object
-        CodeType 返回值：code对象
+
+        Returns:
+            CodeType: code对象
         """
         code = self.tobytes()
         codeobj = types.CodeType(self.argcount, self.posonlyargcount,
@@ -141,8 +139,9 @@ class Func:
 
     def tofunc(self) -> types.FunctionType:
         """转换为真正的函数
-        Convert Func object to real function
-        FunctionType 返回值：真正的函数（能调用的那种）
+
+        Returns:
+            FunctionType: 真正的函数（能调用的那种）
         """
         func = types.FunctionType(self.tocode(), self.globals)
         return func
