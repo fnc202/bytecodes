@@ -111,8 +111,12 @@ class VarInstr(Instr):
     @var.setter
     def var(self, val):
         """获取操作目标"""
-        self.arg = self.table.index(val)
-        self._var = val
+        try:
+            arg = self.table.index(val)
+        except ValueError:
+            self.table.append(val)
+            arg = self.table.index(val)
+            self._var = arg
 
     def disasm(self):
         return "%s %s" % (self.nopc, self._var)
