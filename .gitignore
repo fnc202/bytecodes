@@ -5,3 +5,4 @@ __pycache__
 sphinx/build
 sphinx/source/_build
 *.mo
+.vscode
