@@ -14,7 +14,7 @@ class Instr:
             arg(int): 操作参数
             func(Func): Func对象
         """
-        if type(opc) == str:
+        if isinstance(opc, str):
             opc = self._opc = opcode.opmap[opc]
             self.nopc = opcode.opname[opc]
         else:

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bytecodes \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-26 22:25+0800\n"
+"POT-Creation-Date: 2022-01-19 12:24+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -129,7 +129,8 @@ msgid "指令表"
 msgstr "instructions"
 
 #: bytecodes.func.Func bytecodes.func.Func.fromcode
-#: bytecodes.func.Func.fromfunction bytecodes.func.Func.fromgenerator of
+#: bytecodes.func.Func.fromfunction bytecodes.func.Func.fromgenerator
+#: bytecodes.lnotab.parse_lnotab of
 msgid "参数"
 msgstr "arguments"
 
@@ -140,10 +141,6 @@ msgstr "If none, call emptyinit; otherwise, call fromfunction"
 #: bytecodes.func.Func.disasm:1 of
 msgid "显示反汇编结果"
 msgstr "Disassembly result"
-
-#: bytecodes.func.Func.emptyinit:1 of
-msgid "创建空Func对象"
-msgstr "Create empty Func object"
 
 #: bytecodes.func.Func.fromcode:1 of
 msgid "通过真正的code对象创建Func对象"
@@ -315,6 +312,39 @@ msgstr "Superclass only.Instructions for"
 msgid "操作目标"
 msgstr "operating target"
 
+#: ../../source/bytecodes.rst:24
+#, fuzzy
+msgid "bytecodes.lnotab module"
+msgstr "bytecodes.insn module"
+
+#: bytecodes.lnotab:1 of
+msgid "Parse and create the line No. table."
+msgstr ""
+
+#: bytecodes.lnotab.parse_lnotab:1 of
+msgid "Parse the line No. table."
+msgstr ""
+
+#: bytecodes.lnotab.parse_lnotab:3 of
+msgid "the line No. table"
+msgstr ""
+
+#: bytecodes.lnotab.parse_lnotab:5 of
+msgid "the first line of the code"
+msgstr ""
+
+#: bytecodes.lnotab.parse_lnotab:7 of
+msgid "the length of the bytecode"
+msgstr ""
+
+#: bytecodes.lnotab.parse_lnotab of
+msgid "Yields"
+msgstr ""
+
+#: bytecodes.lnotab.parse_lnotab:10 of
+msgid "*tuple* -- address of the bytecode, line number of the source code"
+msgstr ""
+
 #~ msgid "修改Python方法、函数中的一切！ Change everything in a function/method!"
 #~ msgstr "Change everything in a function/method!"
 
@@ -403,4 +433,7 @@ msgstr "operating target"
 
 #~ msgid "Module contents"
 #~ msgstr "Module contents"
+
+#~ msgid "创建空Func对象"
+#~ msgstr "Create empty Func object"
 

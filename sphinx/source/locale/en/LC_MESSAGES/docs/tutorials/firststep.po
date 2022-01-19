@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, 方南承(Nancheng Fang)
+# This file is distributed under the same license as the bytecodes package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: bytecodes \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-19 12:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/docs/tutorials/firststep.rst:2
+msgid "First step"
+msgstr ""
+
+#: ../../source/docs/tutorials/firststep.rst:3
+msgid ""
+"You will learn how to use :py:class:`bytecodes.func.Func` and "
+":py:class:`bytecodes.insn.Instr` in this passage. All bytecode "
+"instructions are here: :ref:`the dis module <bytecodes>`"
+msgstr ""
+
+#: ../../source/docs/tutorials/firststep.rst:7
+msgid "Task"
+msgstr ""
+
+#: ../../source/docs/tutorials/firststep.rst:8
+msgid "Here is a python function: ::"
+msgstr ""
+
+#: ../../source/docs/tutorials/firststep.rst:13
+msgid ""
+"Now we want to create a new function named \"subtract\" by editing the "
+"bytecode of the function \"add\", which will perform subtraction. How to "
+"do that?"
+msgstr ""
+
+#: ../../source/docs/tutorials/firststep.rst:16
+msgid "How to do that?"
+msgstr ""
+
+#: ../../source/docs/tutorials/firststep.rst:17
+msgid ""
+"We can make a function editable by :py:class:`bytecodes.func.Func`. So we"
+" should create a :py:class:`bytecodes.func.Func` object.::"
+msgstr ""
+
+#: ../../source/docs/tutorials/firststep.rst:21
+msgid "What happens?"
+msgstr ""
+
+#: ../../source/docs/tutorials/firststep.rst:23
+msgid ""
+"Func.\\__init\\__ reads the function \\\"add\\\"\\'s bytecode. We can "
+"edit it now. Let's look at its bytecode."
+msgstr ""
+
+#: ../../source/docs/tutorials/firststep.rst:31
+msgid ""
+"Look at the instuction \\\"BINARY_ADD\\\". It performs an addition "
+"operation. It takes two numbers from the top of the stack and puts the "
+"result back on the stack. The instruction \\\"BINARY_SUBTRACT\\\" "
+"performs a subtraction operation. We can change BINARY_ADD to "
+"BINARY_SUBTRACT to slove the problem. ::"
+msgstr ""
+
+#: ../../source/docs/tutorials/firststep.rst:37
+msgid "Change the name. ::"
+msgstr ""
+
+#: ../../source/docs/tutorials/firststep.rst:41
+msgid ""
+"Finally, we have to convert the :py:class:`bytecodes.func.Func` object "
+"into a function to run. ::"
+msgstr ""
+
+#: ../../source/docs/tutorials/firststep.rst:45
+msgid "Let's test it!"
+msgstr ""
+
+#: ../../source/docs/tutorials/firststep.rst:54
+msgid "Full code: ::"
+msgstr ""
+

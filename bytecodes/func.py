@@ -36,8 +36,24 @@ class Func:
     # pylint: disable=too-many-instance-attributes
     def __init__(self, func: typing.Union[NoneType, types.FunctionType,
                                           types.GeneratorType] = None):
+        self.consts = []
+        self.names = []
+        self.varnames = []
+        self.freevars = []
+        self.argcount = 0
+        self.cellvars = []
+        self.filename = ""
+        self.firstlineno = 1
+        self.flags = 67
+        self.kwonlyargcount = 0
+        self.lnotab = b''
+        self.name = ""
+        self.nlocals = 0
+        self.posonlyargcount = 0
+        self.stacksize = 11
+        self.ins = []
         if func is None:
-            self.emptyinit()
+            pass
         elif isinstance(func, types.FunctionType):
             self.fromfunction(func)
         else:
@@ -105,26 +121,6 @@ class Func:
                 ins.append(Instr(opc, arg, self))
         self.ins = ins
 
-    def emptyinit(self):
-        """创建空Func对象"""
-        self.globals = {}
-        self.consts = []
-        self.names = []
-        self.varnames = []
-        self.freevars = []
-        self.argcount = 0
-        self.cellvars = []
-        self.filename = ""
-        self.firstlineno = 1
-        self.flags = 67
-        self.kwonlyargcount = 0
-        self.lnotab = b''
-        self.name = ""
-        self.nlocals = 0
-        self.posonlyargcount = 0
-        self.stacksize = 11
-        self.ins = []
-
     def disasm(self):
         """显示反汇编结果"""
         addr = 0
@@ -165,5 +161,5 @@ class Func:
         Returns:
             FunctionType: 真正的函数（能调用的那种）
         """
-        func = types.FunctionType(self.tocode(), globals())
+        func = types.FunctionType(self.tocode(), {})
         return func

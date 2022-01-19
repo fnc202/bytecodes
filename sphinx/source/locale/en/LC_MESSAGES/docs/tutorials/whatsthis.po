@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, 方南承(Nancheng Fang)
+# This file is distributed under the same license as the bytecodes package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: bytecodes \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-19 12:05+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../source/docs/tutorials/whatsthis.rst:2
+msgid "Preparatory knowledge"
+msgstr ""
+
+#: ../../source/docs/tutorials/whatsthis.rst:5
+msgid "Python's bytecode"
+msgstr ""
+
+#: ../../source/docs/tutorials/whatsthis.rst:6
+msgid ""
+"Python looks like an interpretation execution language, but it needs to "
+"be compiled into Python bytecode, just like Java."
+msgstr ""
+
+#: ../../source/docs/tutorials/whatsthis.rst:9
+msgid "All the python's bytecodes are here: :ref:`the dis module <bytecodes>`."
+msgstr ""
+
+#: ../../source/docs/tutorials/whatsthis.rst:11
+msgid ""
+"They are included in code objects together with variables, constant "
+"tables, etc., and then included in functions, modules, generators, etc."
+msgstr ""
+
+#: ../../source/docs/tutorials/whatsthis.rst:15
+msgid "Code objects"
+msgstr ""
+
+#: ../../source/docs/tutorials/whatsthis.rst:16
+msgid ""
+"Python's bytecodes are packaged in code objects. They have many "
+"attributes, but they are not editable. CodeType.co_code is just a bytes "
+"object. It's not verbose at all. That why we make this module."
+msgstr ""
+

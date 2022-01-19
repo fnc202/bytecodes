@@ -19,3 +19,11 @@ bytecodes.insn module
    :members:
    :undoc-members:
    :show-inheritance:
+
+bytecodes.lnotab module
+-----------------------
+
+.. automodule:: bytecodes.lnotab
+   :members:
+   :undoc-members:
+   :show-inheritance:

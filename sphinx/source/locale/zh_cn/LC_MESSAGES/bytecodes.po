@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bytecodes \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-26 22:25+0800\n"
+"POT-Creation-Date: 2022-01-19 12:24+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -129,7 +129,8 @@ msgid "指令表"
 msgstr ""
 
 #: bytecodes.func.Func bytecodes.func.Func.fromcode
-#: bytecodes.func.Func.fromfunction bytecodes.func.Func.fromgenerator of
+#: bytecodes.func.Func.fromfunction bytecodes.func.Func.fromgenerator
+#: bytecodes.lnotab.parse_lnotab of
 msgid "参数"
 msgstr ""
 
@@ -139,10 +140,6 @@ msgstr ""
 
 #: bytecodes.func.Func.disasm:1 of
 msgid "显示反汇编结果"
-msgstr ""
-
-#: bytecodes.func.Func.emptyinit:1 of
-msgid "创建空Func对象"
 msgstr ""
 
 #: bytecodes.func.Func.fromcode:1 of
@@ -315,6 +312,39 @@ msgstr ""
 msgid "操作目标"
 msgstr ""
 
+#: ../../source/bytecodes.rst:24
+#
+msgid "bytecodes.lnotab module"
+msgstr "bytecodes.lnotab模块"
+
+#: bytecodes.lnotab:1 of
+msgid "Parse and create the line No. table."
+msgstr "处理和创建行号表"
+
+#: bytecodes.lnotab.parse_lnotab:1 of
+msgid "Parse the line No. table."
+msgstr "处理行号表"
+
+#: bytecodes.lnotab.parse_lnotab:3 of
+msgid "the line No. table"
+msgstr "行号表"
+
+#: bytecodes.lnotab.parse_lnotab:5 of
+msgid "the first line of the code"
+msgstr "代码的第一行"
+
+#: bytecodes.lnotab.parse_lnotab:7 of
+msgid "the length of the bytecode"
+msgstr "字节码长度"
+
+#: bytecodes.lnotab.parse_lnotab of
+msgid "Yields"
+msgstr ""
+
+#: bytecodes.lnotab.parse_lnotab:10 of
+msgid "*tuple* -- address of the bytecode, line number of the source code"
+msgstr "*tuple* -- 字节码的地址及其对应行号"
+
 #~ msgid "bytecodes.test module"
 #~ msgstr "bytecodes.test模块"
 
@@ -328,5 +358,8 @@ msgstr ""
 #~ msgstr "模块内容"
 
 #~ msgid "？"
+#~ msgstr ""
+
+#~ msgid "创建空Func对象"
 #~ msgstr ""
 
